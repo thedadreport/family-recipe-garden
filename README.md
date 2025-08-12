@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Family Recipe Garden
+
+AI-powered recipe solutions that turn dinner stress into family joy. From "what's in my fridge?" to "plan my whole week" - we've got the recipe for every family situation.
+
+## Features
+
+### 🍳 Recipe Generator
+- **Situational Recipe Generation**: 6 different cooking situations from "Protein + Random Stuff" to "One Pot Solutions"
+- **Family-Focused**: Recipes designed for real families with kids who will actually eat them
+- **AI-Powered**: Smart recipe generation based on your family size, preferences, and available time
+- **Save & Organize**: Build your personal recipe collection
+
+### 📅 Weekly Meal Planner
+- **Complete Meal Plans**: 5-7 dinners planned in minutes
+- **Budget-Conscious Options**: Plans that respect your grocery budget
+- **Time-Saving Strategies**: Sunday prep schedules for busy weeknights
+- **Shopping Lists**: Organized by store section with cost estimates
+- **Prep Schedules**: Know exactly what to do when
+
+## Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **AI Integration**: Claude API for recipe generation
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18 or later
+- npm or yarn package manager
 
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/family-recipe-garden.git
+cd family-recipe-garden
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+family-recipe-garden/
+├── app/                      # Next.js app directory
+│   ├── globals.css          # Global styles
+│   ├── layout.tsx           # Root layout
+│   ├── page.tsx             # Landing page
+│   ├── recipe/              # Recipe generator route
+│   │   └── page.tsx
+│   └── weekly-plan/         # Weekly planner route
+│       └── page.tsx
+├── components/              # React components
+│   ├── FamilyRecipeGenerator.tsx
+│   ├── LandingPage.tsx
+│   ├── Navigation.tsx
+│   └── WeeklyMealPlanner.tsx
+├── public/                  # Static assets
+└── README.md
+```
 
-## Learn More
+## Key Features
 
-To learn more about Next.js, take a look at the following resources:
+### Recipe Situations
+1. **General Recipe** - Standard recipe generation
+2. **Protein + Random Stuff** - Work with what you have
+3. **Stretch Protein** - Feed more people with less
+4. **Tonight + Tomorrow's Lunch** - Solve two meals at once
+5. **One Pot Solution** - Minimal cleanup
+6. **Dump and Bake** - Let the oven do the work
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Meal Planning Types
+1. **General Planning** - Complete weekly meal plans
+2. **Budget-Conscious** - Cost-optimized meal planning
+3. **Time-Saving** - Prep-focused strategies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The app is configured for easy deployment on Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Connect your GitHub repository to Vercel
+3. Deploy with zero configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For other platforms, build the project:
+
+```bash
+npm run build
+npm start
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -am 'Add feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## Business Strategy
+
+### Target Users
+- Busy parents (25-45 years old)
+- Families struggling with weeknight dinner planning
+- Home cooks looking for practical solutions
+
+### Value Proposition
+- **For Free Users**: Solve today's dinner crisis with situational recipes
+- **For Pro Users**: Complete weekly planning system with shopping lists and prep schedules
+
+### Revenue Model
+- **Free Tier**: 5 recipes per month, basic family preferences
+- **Pro Tier**: Unlimited recipes, weekly planning, shopping lists, prep schedules
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, email hello@familyrecipegarden.com or create an issue in this repository.
+
+---
+
+Made with ❤️ for busy families who want to turn dinner stress into family joy.
